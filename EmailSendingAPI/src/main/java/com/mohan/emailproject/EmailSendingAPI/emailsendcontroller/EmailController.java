@@ -15,7 +15,7 @@ public class EmailController {
 	
 	@GetMapping("/sendemail")
 	public String sendEmail() {
-		var msg="dfghjk";
+		var msg="Hi, this a test mail.";
 		
 		emailSendService.sendEmailMethod("test@gmail.com", "test", "test");
 		return "sent succesfully";
